@@ -1,6 +1,6 @@
 import java.util.*;
 
-class countingCharactersInString {
+class CountingCharactersInString {
 
     public static String StringChallenge(String str) {
         if(str.isEmpty()){
