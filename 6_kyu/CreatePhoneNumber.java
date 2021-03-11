@@ -5,16 +5,16 @@ public class CreatePhoneNumber {
     }
 
     public static String createPhoneNumber(int[] numbers) {
-        String phoneNumber = "";
+        StringBuilder phoneNumber = new StringBuilder();
         for (int i = 0; i < numbers.length; i++) {
             if (i == 0)
-                phoneNumber += '(';
+                phoneNumber.append('(');
             else if (i == 3)
-                phoneNumber += ") ";
+                phoneNumber.append(") ");
             else if (i == 6)
-                phoneNumber += '-';
-            phoneNumber += numbers[i];
+                phoneNumber.append('-');
+            phoneNumber.append(numbers[i]);
         }
-        return phoneNumber;
+        return phoneNumber.toString();
     }
 }
